@@ -32,7 +32,7 @@
 
 ## Overview
 
-![screenshot](my-team-page.png)
+![screenshot](https://raw.githubusercontent.com/je-jo/my-team-page/main/images/my-team-page.png)
 
 I've learned that you cannot target specific colums in neither flexbox nor css grid, then had fun with :nth-child() selectors. :)
 

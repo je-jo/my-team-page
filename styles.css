@@ -1,0 +1,156 @@
+@import url(minireset.css);
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    --h1-size: 36px;
+    --h2-size: 18px;
+    --h3-size: 14px;
+    --fc-size: 10px;
+    --p-lh: 21px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+/* HEADER */ 
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 43px 0;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    padding: 28px 0;
+    font-weight: bold;
+    font-size: var(--h1-size);
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+.block__header {
+    max-width: 412px;
+}
+
+h2 {
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: var(--h2-size);
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: var(--h3-size);
+    line-height: var(--p-lh);
+}
+
+/* MAIN */ 
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.card {
+    max-width: 50%;
+    padding: 8px;
+}
+
+.card:nth-child(2n) {
+    margin-top: 48px;
+  }
+
+img {
+    display: block;
+    width: 98%;
+    height: auto;
+    padding-right: 13px;
+}
+
+figcaption {
+    font-family: 'PT Serif', serif;
+    font-size: var(--fc-size);
+    line-height: 13px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    transform-origin: left;
+    position: relative;
+    left: 94%;
+    top: 8px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: var(--h3-size);
+    line-height: 21px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+    padding: 24px 0;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+    color: #bdbdbd;
+}
+
+a {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9e175b;
+}
+
+@media screen and (min-width: 760px) {
+
+    :root {
+        --h3-size: 18px;
+        --fc-size: 12px;
+        --p-lh: 27px;
+    }
+
+    header {
+        max-width: 930px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 96px 0;
+    }
+
+    .card {
+        max-width: 30%;
+        gap: 35px;
+    }
+
+    figcaption {
+        margin: 0 10px;
+    }
+
+    .card:nth-child(2n) {
+        margin-top: 0;
+      }
+
+    .card:nth-child(3n + 2) {
+        margin-top: 90px;
+      } 
+
+}
